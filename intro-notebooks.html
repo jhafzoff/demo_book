@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Notebooks with MyST Markdown &#8212; Demo Book</title>
+    <title>Key Features of Jupyter Notebooks &#8212; Demo Book</title>
   
   
   
@@ -60,10 +60,11 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'markdown-notebooks';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'intro-notebooks';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Content with notebooks" href="notebooks.html" />
+    <link rel="next" title="Markdown Files" href="markdown.html" />
+    <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -168,14 +169,14 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="intro-notebooks.html"><strong>Key Features of Jupyter Notebooks</strong></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Key Features of Jupyter Notebooks</strong></a></li>
 
 
 
 
 <li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Notebooks with MyST Markdown</a></li>
+<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
 </ul>
 
     </div>
@@ -247,7 +248,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fmarkdown-notebooks.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro-notebooks.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -277,7 +278,7 @@
       
       
       
-      <li><a href="_sources/markdown-notebooks.md" target="_blank"
+      <li><a href="_sources/intro-notebooks.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -353,7 +354,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Notebooks with MyST Markdown</h1>
+    <h1>Key Features of Jupyter Notebooks</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -363,10 +364,13 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#an-example-cell">An example cell</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-notebook-with-myst-markdown">Create a notebook with MyST Markdown</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quickly-add-yaml-metadata-for-myst-notebooks">Quickly add YAML metadata for MyST Notebooks</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>Key Features of Jupyter Notebooks</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#components-of-a-jupyter-notebook"><strong>Components of a Jupyter Notebook</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#common-use-cases"><strong>Common Use Cases</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-started-with-jupyter-notebooks"><strong>Getting Started with Jupyter Notebooks</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#advantages-of-jupyter-notebooks"><strong>Advantages of Jupyter Notebooks</strong></a></li>
 </ul>
+
             </nav>
         </div>
     </div>
@@ -377,51 +381,106 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="notebooks-with-myst-markdown">
-<h1>Notebooks with MyST Markdown<a class="headerlink" href="#notebooks-with-myst-markdown" title="Link to this heading">#</a></h1>
-<p>Jupyter Book also lets you write text-based notebooks using MyST Markdown.
-See <a class="reference external" href="https://jupyterbook.org/file-types/myst-notebooks.html">the Notebooks with MyST Markdown documentation</a> for more detailed instructions.
-This page shows off a notebook written in MyST Markdown.</p>
-<section id="an-example-cell">
-<h2>An example cell<a class="headerlink" href="#an-example-cell" title="Link to this heading">#</a></h2>
-<p>With MyST Markdown, you can define code cells with a directive like so:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4
-</pre></div>
-</div>
-</div>
-</div>
-<p>When your book is built, the contents of any <code class="docutils literal notranslate"><span class="pre">{code-cell}</span></code> blocks will be
-executed with your default Jupyter kernel, and their outputs will be displayed
-in-line with the rest of your content.</p>
-<div class="admonition seealso">
-<p class="admonition-title">See also</p>
-<p>Jupyter Book uses <a class="reference external" href="https://jupytext.readthedocs.io/en/latest/">Jupytext</a> to convert text-based files to notebooks, and can support <a class="reference external" href="https://jupyterbook.org/file-types/jupytext.html">many other text-based notebook files</a>.</p>
-</div>
-</section>
-<section id="create-a-notebook-with-myst-markdown">
-<h2>Create a notebook with MyST Markdown<a class="headerlink" href="#create-a-notebook-with-myst-markdown" title="Link to this heading">#</a></h2>
-<p>MyST Markdown notebooks are defined by two things:</p>
+  <p>A <strong>Jupyter Notebook</strong> is an open-source web-based application that allows you to create and share documents containing live code, equations, visualizations, and explanatory text. It is a powerful tool for interactive computing, often used in data science, machine learning, scientific research, and education. Here’s an overview of its main features and uses:</p>
+<section id="key-features-of-jupyter-notebooks">
+<h1><strong>Key Features of Jupyter Notebooks</strong><a class="headerlink" href="#key-features-of-jupyter-notebooks" title="Link to this heading">#</a></h1>
 <ol class="arabic simple">
-<li><p>YAML metadata that is needed to understand if / how it should convert text files to notebooks (including information about the kernel needed).
-See the YAML at the top of this page for example.</p></li>
-<li><p>The presence of <code class="docutils literal notranslate"><span class="pre">{code-cell}</span></code> directives, which will be executed with your book.</p></li>
+<li><p><strong>Interactive Code Execution</strong>:</p>
+<ul class="simple">
+<li><p>Jupyter Notebooks support multiple programming languages (with Python being the most popular) through “kernels.”</p></li>
+<li><p>You can write and execute code in cells, allowing you to run code snippets individually rather than running an entire script at once.</p></li>
+<li><p>It displays outputs directly beneath each code cell, which is useful for testing and iterating quickly.</p></li>
+</ul>
+</li>
+<li><p><strong>Mixing Code with Text</strong>:</p>
+<ul class="simple">
+<li><p>Jupyter Notebooks support <strong>Markdown</strong> and <strong>HTML</strong> for adding text, headings, links, images, etc., alongside code.</p></li>
+<li><p>This lets you create notebooks that blend code and narrative, making it ideal for documentation, explanations, and instructions.</p></li>
+</ul>
+</li>
+<li><p><strong>Data Visualization</strong>:</p>
+<ul class="simple">
+<li><p>Supports libraries like <strong>Matplotlib</strong>, <strong>Seaborn</strong>, <strong>Plotly</strong>, and <strong>Bokeh</strong> for creating visualizations.</p></li>
+<li><p>Visual outputs, such as graphs or plots, appear directly below the code cell that generates them, making it easy to interpret results in real-time.</p></li>
+</ul>
+</li>
+<li><p><strong>Reproducible Research</strong>:</p>
+<ul class="simple">
+<li><p>Because Jupyter Notebooks combine code, data, and explanations, they’re excellent for creating reproducible research.</p></li>
+<li><p>Other researchers or collaborators can rerun and verify results using the notebook’s code and data.</p></li>
+</ul>
+</li>
+<li><p><strong>Integration with Data Science Libraries</strong>:</p>
+<ul class="simple">
+<li><p>Jupyter Notebooks seamlessly integrate with popular data science libraries like <strong>Pandas</strong> for data manipulation, <strong>NumPy</strong> for numerical computations, and <strong>SciPy</strong> for scientific computing.</p></li>
+<li><p>Machine learning libraries like <strong>Scikit-Learn</strong>, <strong>TensorFlow</strong>, and <strong>PyTorch</strong> also work smoothly within notebooks, making them a go-to tool for machine learning practitioners.</p></li>
+</ul>
+</li>
 </ol>
-<p>That’s all that is needed to get started!</p>
 </section>
-<section id="quickly-add-yaml-metadata-for-myst-notebooks">
-<h2>Quickly add YAML metadata for MyST Notebooks<a class="headerlink" href="#quickly-add-yaml-metadata-for-myst-notebooks" title="Link to this heading">#</a></h2>
-<p>If you have a markdown file and you’d like to quickly add YAML metadata to it, so that Jupyter Book will treat it as a MyST Markdown Notebook, run the following command:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">myst</span> <span class="n">init</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">markdownfile</span><span class="o">.</span><span class="n">md</span>
+<section id="components-of-a-jupyter-notebook">
+<h1><strong>Components of a Jupyter Notebook</strong><a class="headerlink" href="#components-of-a-jupyter-notebook" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p><strong>Cells</strong>:</p>
+<ul>
+<li><p><strong>Code Cells</strong>: For writing and executing code.</p></li>
+<li><p><strong>Markdown Cells</strong>: For adding formatted text, which can include links, lists, tables, and more.</p></li>
+<li><p><strong>Raw Cells</strong>: Contain unformatted text; mostly used when converting notebooks to different formats.</p></li>
+</ul>
+</li>
+<li><p><strong>Kernel</strong>:</p>
+<ul>
+<li><p>The engine that runs code within a Jupyter Notebook. For example, a Python kernel runs Python code, but Jupyter supports many other languages like R, Julia, and Scala.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="common-use-cases">
+<h1><strong>Common Use Cases</strong><a class="headerlink" href="#common-use-cases" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p><strong>Data Analysis and Visualization</strong>: Analyze datasets, visualize patterns, and share findings in one document.</p></li>
+<li><p><strong>Machine Learning and AI</strong>: Develop, test, and iterate on machine learning models.</p></li>
+<li><p><strong>Education and Tutorials</strong>: Create interactive tutorials or educational materials that blend theory, code, and exercises.</p></li>
+<li><p><strong>Scientific Research</strong>: Share code and data in a single, reproducible document.</p></li>
+</ul>
+</section>
+<section id="getting-started-with-jupyter-notebooks">
+<h1><strong>Getting Started with Jupyter Notebooks</strong><a class="headerlink" href="#getting-started-with-jupyter-notebooks" title="Link to this heading">#</a></h1>
+<ol class="arabic">
+<li><p><strong>Install Jupyter</strong>:</p>
+<ul>
+<li><p>If you have Python, install Jupyter using pip:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>jupyter
 </pre></div>
 </div>
+</li>
+<li><p>You can also install <strong>JupyterLab</strong>, an enhanced version with more features:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>jupyterlab
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+<li><p><strong>Run Jupyter</strong>:</p>
+<ul>
+<li><p>Launch the Jupyter Notebook by running:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter<span class="w"> </span>notebook
+</pre></div>
+</div>
+</li>
+<li><p>This opens a notebook interface in your web browser where you can create new notebooks or open existing ones.</p></li>
+</ul>
+</li>
+</ol>
 </section>
+<section id="advantages-of-jupyter-notebooks">
+<h1><strong>Advantages of Jupyter Notebooks</strong><a class="headerlink" href="#advantages-of-jupyter-notebooks" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p><strong>Interactivity</strong>: Run and rerun specific parts of your code, making it easy to debug and experiment.</p></li>
+<li><p><strong>Documentation and Presentation</strong>: Ideal for combining code with narrative, enhancing comprehension.</p></li>
+<li><p><strong>Sharable Format</strong>: Save notebooks as <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> files, which can be shared and opened by anyone with Jupyter.</p></li>
+<li><p><strong>Export Options</strong>: Export to formats like PDF, HTML, or Markdown for easy distribution and publication.</p></li>
+</ul>
 </section>
 
     <script type="text/x-thebe-config">
@@ -455,13 +514,22 @@ See the YAML at the top of this page for example.</p></li>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="notebooks.html"
+       href="intro.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Content with notebooks</p>
+        <p class="prev-next-title">Welcome to your Jupyter Book</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="markdown.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Markdown Files</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -480,10 +548,13 @@ See the YAML at the top of this page for example.</p></li>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#an-example-cell">An example cell</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-notebook-with-myst-markdown">Create a notebook with MyST Markdown</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quickly-add-yaml-metadata-for-myst-notebooks">Quickly add YAML metadata for MyST Notebooks</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>Key Features of Jupyter Notebooks</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#components-of-a-jupyter-notebook"><strong>Components of a Jupyter Notebook</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#common-use-cases"><strong>Common Use Cases</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-started-with-jupyter-notebooks"><strong>Getting Started with Jupyter Notebooks</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#advantages-of-jupyter-notebooks"><strong>Advantages of Jupyter Notebooks</strong></a></li>
 </ul>
+
   </nav></div>
 
 </div></div>
