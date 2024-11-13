@@ -6,7 +6,9 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Search - Demo Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Branching Strategy Explanation &#8212; Demo Book</title>
   
   
   
@@ -58,12 +60,10 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'search';</script>
-  <script src="_static/searchtools.js"></script>
-  <script src="_static/language_data.js"></script>
-  <script src="searchindex.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'branching-stragegy';</script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="#" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Notebooks with MyST Markdown" href="markdown-notebooks.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -85,7 +85,7 @@
   <dialog id="pst-search-dialog">
     
 <form class="bd-search d-flex align-items-center"
-      action="#"
+      action="search.html"
       method="get">
   <i class="fa-solid fa-magnifying-glass"></i>
   <input type="search"
@@ -114,8 +114,6 @@
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
@@ -169,7 +167,7 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="intro-notebooks.html"><strong>Key Features of Jupyter Notebooks</strong></a></li>
 
 
@@ -178,7 +176,7 @@
 <li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
-<li class="toctree-l1"><a class="reference internal" href="branching-stragegy.html"><strong>Branching Strategy Explanation</strong></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Branching Strategy Explanation</strong></a></li>
 </ul>
 
     </div>
@@ -250,7 +248,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fsearch.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fbranching-stragegy.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -262,6 +260,54 @@
   </span>
 <span class="btn__text-container">Open issue</span>
 </a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/branching-stragegy.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
 </li>
       
   </ul>
@@ -304,41 +350,87 @@
 </div>
               
               
-  <div class="bd-search-container">
-    <h1>Search</h1>
-    <noscript>
-      <div class="admonition error">
-        <p class="admonition-title">Error</p>
-        <p>Please activate JavaScript to enable the search functionality.</p>
-      </div>
-    </noscript>
-    
-<form class="bd-search d-flex align-items-center"
-      action="#"
-      method="get">
-  <i class="fa-solid fa-magnifying-glass"></i>
-  <input type="search"
-         class="form-control"
-         name="q"
-         placeholder="Search this book..."
-         aria-label="Search this book..."
-         autocomplete="off"
-         autocorrect="off"
-         autocapitalize="off"
-         spellcheck="false"/>
-  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form>
-    <div id="search-results"></div>
-  </div>
-  <script>
-    // Activate the search field on page load
-    let searchInput = document.querySelector("form.bd-search input");
-    if (searchInput) {
-        searchInput.focus();
-        searchInput.select();
-        console.log("[PST]: Set focus on search field.");
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Branching Strategy Explanation</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <p>To manage a branching strategy with Pull Requests (PRs) for Jupyter Books using <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code>, you can adopt a workflow that involves separating development work from the production-ready build on GitHub Pages. Here’s a recommended strategy and a visual diagram.</p>
+<hr class="docutils" />
+<section id="branching-strategy-explanation">
+<h1><strong>Branching Strategy Explanation</strong><a class="headerlink" href="#branching-strategy-explanation" title="Link to this heading">#</a></h1>
+<ol class="arabic">
+<li><p><strong>Main Branch</strong> (<code class="docutils literal notranslate"><span class="pre">main</span></code>):</p>
+<ul class="simple">
+<li><p>This branch holds the source files (Markdown, Jupyter Notebooks, <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code>, <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code>, etc.).</p></li>
+<li><p>Developers create PRs to <code class="docutils literal notranslate"><span class="pre">main</span></code> to propose changes and improvements to the book content and structure.</p></li>
+<li><p>When PRs are merged into <code class="docutils literal notranslate"><span class="pre">main</span></code>, it triggers the build process.</p></li>
+</ul>
+</li>
+<li><p><strong>GitHub Pages Branch</strong> (<code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>):</p>
+<ul class="simple">
+<li><p>This branch contains the generated HTML files for publishing on GitHub Pages.</p></li>
+<li><p><strong>Note</strong>: You don’t edit files directly on <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>. Instead, after building the book from the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch, you use <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code> to push the <code class="docutils literal notranslate"><span class="pre">_build/html</span></code> files to <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>.</p></li>
+</ul>
+</li>
+<li><p><strong>Development Workflow</strong>:</p>
+<ul class="simple">
+<li><p>Developers work on <strong>feature branches</strong> created off <code class="docutils literal notranslate"><span class="pre">main</span></code> for new content or updates.</p></li>
+<li><p>Once a feature is complete, they create a <strong>Pull Request</strong> (PR) from the feature branch to <code class="docutils literal notranslate"><span class="pre">main</span></code>.</p></li>
+<li><p>After the PR is reviewed and merged, you rebuild the book and publish to <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> using <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code>.</p></li>
+</ul>
+</li>
+<li><p><strong>Publishing Workflow</strong>:</p>
+<ul>
+<li><p>After merging changes into <code class="docutils literal notranslate"><span class="pre">main</span></code>, run:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter-book<span class="w"> </span>build<span class="w"> </span>mybookname
+</pre></div>
+</div>
+</li>
+<li><p>Then, use <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code> to push the build to <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ghp-import<span class="w"> </span>-n<span class="w"> </span>-p<span class="w"> </span>-f<span class="w"> </span>_build/html
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<hr class="docutils" />
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
     }
-  </script>
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
 
               
               
@@ -347,6 +439,15 @@
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="markdown-notebooks.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Notebooks with MyST Markdown</p>
+      </div>
+    </a>
 </div>
                 </footer>
               
